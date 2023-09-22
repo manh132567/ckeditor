@@ -30,6 +30,7 @@ import Table from "@ckeditor/ckeditor5-table/src/table.js";
 import TableToolbar from "@ckeditor/ckeditor5-table/src/tabletoolbar.js";
 import TextTransformation from "@ckeditor/ckeditor5-typing/src/texttransformation.js";
 import GeneralHtmlSupport from "@ckeditor/ckeditor5-html-support/src/generalhtmlsupport";
+import Font from '@ckeditor/ckeditor5-font/src/font'
 
 class Editor extends ClassicEditor {}
 
@@ -52,6 +53,7 @@ Editor.builtinPlugins = [
   Indent,
   Italic,
   Link,
+  Font,
   LinkImage,
   List,
   MediaEmbed,
@@ -70,6 +72,7 @@ Editor.defaultConfig = {
     items: [
       "heading",
       "|",
+      'fontSize',
       "bold",
       "italic",
       "fontColor",
